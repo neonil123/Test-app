@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#93C6A1"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/FrontTxt"
+        android:layout_width="123dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="48dp"
+        android:fontFamily="@font/muli_bold"
+        android:text="Chinese"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/logo-imj"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/logo-imj"
+        android:layout_width="200dp"
+        android:layout_height="194dp"
+        app:layout_constraintBottom_toTopOf="@+id/AddFoodTxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.871"
+        app:srcCompat="@drawable/logo" />
+
+    <Button
+        android:id="@+id/DecideBTN"
+        android:layout_width="0dp"
+        android:layout_height="47dp"
+        android:background="#EFE9E9"
+        android:text="DECIDE!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/AddFoodTxt"
+        android:layout_width="255dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="20dp"
+        android:background="#ECE6E6"
+        android:ems="10"
+        android:hint="Add new food,,,"
+        android:inputType="textPersonName"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/AddFood"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/AddFood"
+        android:layout_width="119dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="56dp"
+        android:text="Add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
